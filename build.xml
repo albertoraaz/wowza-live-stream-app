@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<project name="WowzaLiveStream" default="jar" basedir="..">
+
+	<property name="wowza.lib.dir" value="C:/Program Files (x86)/Wowza Media Systems/Wowza Streaming Engine 4.8.11+5/lib"/>
+	<property name="jar.filename" value="WowzaLiveStream.jar"/>
+	<property name="core.build.dir" value="bin"/>
+
+	<target name="jar">
+		<jar jarfile="${wowza.lib.dir}/${jar.filename}">
+			<fileset dir="${core.build.dir}"/>
+		</jar>
+	</target>
+
+	<target name="resources">
+		<echo file="mp4:sample.mp4">${video}</echo>
+	</target>
+
+</project>
