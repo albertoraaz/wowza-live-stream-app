@@ -12,7 +12,7 @@
 	</target>
 
 	<target name="resources">
-		<echo file="mp4:sample.mp4">${video}</echo>
+		<echo file="mp4:sample.mp4">${video}</echo> 
 	</target>
 
 </project>

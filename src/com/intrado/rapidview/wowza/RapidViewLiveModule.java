@@ -1,4 +1,4 @@
-package com.intrado.live.stream;
+package com.intrado.rapidview.wowza;
 
 import com.wowza.wms.application.*;
 import com.wowza.wms.logging.WMSLoggerFactory;
@@ -8,11 +8,11 @@ import com.wowza.wms.module.ModuleBase;
 /**
  * The Class StreamingProject.
  */
-public class WowzaLiveStream extends ModuleBase implements IModuleOnApp {
+public class RapidViewLiveModule extends ModuleBase implements IModuleOnApp {
 
 	/**
 	 * On app start.
-	 *
+	 * 
 	 * @param arg0 the arg 0
 	 */
 	@Override

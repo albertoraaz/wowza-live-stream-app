@@ -1,4 +1,4 @@
-package com.intrado.live.stream;
+package com.intrado.rapidview.wowza;
 
 import com.wowza.wms.application.IApplication;
 import com.wowza.wms.application.IApplicationInstance;
@@ -14,17 +14,17 @@ import com.wowza.wms.vhost.IVHost;
 import com.wowza.wms.vhost.VHost;
 import com.wowza.wms.vhost.VHostSingleton;
 
-public class WowzaLiveStreamListener implements IServerNotify2 {
+public class RapidViewLiveListener implements IServerNotify2 {
 
-	private static String CLASSNAME = WowzaLiveStreamListener.class.getSimpleName();
+	private static String CLASSNAME = RapidViewLiveListener.class.getSimpleName();
 
-	private static WMSLogger logger = WMSLoggerFactory.getLogger(WowzaLiveStreamListener.class);
+	private static WMSLogger logger = WMSLoggerFactory.getLogger(RapidViewLiveListener.class);
 
 	/** The vhost name. */
-	private String vhostName = VHost.VHOST_DEFAULT; 
+	private String vhostName = VHost.VHOST_DEFAULT;
 
 	/** The app names. */
-	private String appNames = "";
+	private String appNames = ""; 
 
 	/**
 	 * On server create.
